@@ -22,13 +22,13 @@ This class fetches instagram feeds through a headless browser, traffic will be s
 
 ##### Sleeper Agent
 
-in this class resides the protocol that the remote bot will follow when identifying a hashtag associated with an order or task.
+The agent class handles the protocol that the remote bot will follow when identifying a hashtag associated with an order or task.
 
 Currently it features a sleeping stage and 3 placeholders methods 
-- **alpha** -  placeholder
-- **beta** - placeholder
-- **gamma** - placeholder
-- **sleep** - Sleep for 24 hours before checking for new orders
+- **#alpha** -  placeholder
+- **#beta** - placeholder
+- **#gamma** - placeholder
+- **#sleep** - Sleep for 24 hours before checking for new orders
 
 ##### Main loop
 
