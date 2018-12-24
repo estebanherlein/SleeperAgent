@@ -2,8 +2,6 @@
 
 ## Command and Control via social network persona
 
-Proof of Concept on the idea that sleeper bots can be remotely controlled using hashtags on instagram posts.
-
 Similar to what happens in old fashioned spy networks, in the event that a system administrator discovers the communication of sleeping agents through the nexus with their command and control center, he will not be able to identify the real origin of the Orders neither stop the one giving them.
 
 This kind of structure is a lot more resilient to dismantlement by law enforcement forces.
