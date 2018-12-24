@@ -2,7 +2,7 @@
 
 ## Command and Control via social network persona
 
-Similar to what happens in old fashioned spy networks, in the event that a system administrator discovers the communication of sleeping agents through the nexus with their command and control center, he will not be able to identify the real origin of the Orders neither stop the one giving them.
+Similar to what happens in old fashioned spy networks, in the event of a sysadmin discovering the sleeper agent relay channel with the Command and control center he won't be able to identify the real origin of the Orders neither stop the human giving them.
 
 This kind of structure is a lot more resilient to dismantlement by law enforcement forces.
 
