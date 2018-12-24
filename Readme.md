@@ -2,7 +2,7 @@
 
 ## Command and Control via social network persona
 
-Proof of Concept on the idea that bots can be controlled remotely using hashtags on instagram posts.
+Proof of Concept on the idea that sleeper bots can be remotely controlled using hashtags on instagram posts.
 
 Similar to what happens in old fashioned spy networks, in the event that a system administrator discovers the communication of sleeping agents through the nexus with their command and control center, he will not be able to identify the real origin of the Orders neither stop the one giving them.
 
@@ -44,13 +44,13 @@ Currently it features a sleeping stage and 3 placeholders methods
 
 
 ##TODO
-[ ]code alpha as an information gathering phase
+[ ]code alpha as an information gathering stage
 
-[ ]code beta as a DOS stage
+[ ]code beta as a Denial of Service stage
 
 [ ]code gamma as a spreading stage
 
-[ ]add method that changes the currenct contact with CnC
+[ ]add method that changes the contact with CnC
 
 [ ] 
 **I am not responsible for what you will do with this**
