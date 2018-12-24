@@ -52,6 +52,5 @@ Currently it features a sleeping stage and 3 placeholders methods
 
 [ ]add method that changes the contact with CnC
 
-[ ] 
 **I am not responsible for what you will do with this**
 
