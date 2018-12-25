@@ -42,9 +42,13 @@ Currently it features a sleeping stage and 3 placeholders methods
 
 
 ## TO DO
-[x]Rewrite hashtag identification methods
+[x] Rewrite hashtag identification methods
 
-[x]Accept orders regardless of the hashtag position
+[x] Accept orders regardless of the hashtag position
+
+[x] Add network methods: get_private_ip() ,  get_public_ip()
+
+[x] Add Usb Spreading
 
 [ ]code alpha as an information gathering stage
 
