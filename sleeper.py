@@ -6,13 +6,23 @@ class SleeperAgent:
 
     def __init__(self):
         self.agent_shutdown = False
+        self.current_order = 'default'
 
     @staticmethod
-    def identify_last_hashtag(textexcerpts):
+    def identify_hashtag(textexcerpts):
         for x in textexcerpts[0]:
             string = x
             hashtags = tuple([i for i in string.split() if i.startswith("#")])
         return hashtags
+
+    def identify_orders(self, hashtags):
+        for x in hashtags:
+            if x == '#alpha' or x == '#beta' or x == '#gama':
+                self.current_order = x
+                break
+            else:
+                self.current_order = 'default'
+                pass
 
     def parse_data(self, data):
         dispatcher = {'#alpha': self.alpha,
@@ -47,6 +57,6 @@ class SleeperAgent:
         while not self.agent_shutdown:
             k = InstagramScraper()
             results = k.get_texts_from_posts(connection)
-            data = self.identify_last_hashtag(results)
-            currentorder = data[0]
-            self.parse_data(currentorder)
+            data = self.identify_hashtag(results)
+            self.identify_orders(data)
+            self.parse_data(self.current_order)

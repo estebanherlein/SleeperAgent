@@ -42,6 +42,9 @@ Currently it features a sleeping stage and 3 placeholders methods
 
 
 ## TO DO
+[x]Rewrite hashtag identification methods
+[x]Accept orders regardless of the hashtag position
+
 [ ]code alpha as an information gathering stage
 
 [ ]code beta as a Denial of Service stage
